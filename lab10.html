@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            background-color: red;
+            animation-name: ball;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            margin-left: 200px;
+            margin-top: 10px;
+            position: relative;
+        }
+        .box{
+            height: 130px;
+            width: 300px;
+            background-color: bisque;
+            margin-left: 150px;
+            margin-top: 200px;
+            position: absolute;
+        }
+        @keyframes ball {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            50%{
+                top: 315px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                background-color:orangered;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+    <div class="box"></div>
+</body>
+</html>

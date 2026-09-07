@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Layout</title>
+    <style>
+        header {
+            width: 720px;
+            height: 50px;
+            background-color: red;
+            color: white;
+            padding-top: 37px;
+            text-align: center;
+            margin: 5px;
+
+        }
+
+        .nav {
+            height: 250px;
+            width: 150px;
+            background-color: darkblue;
+            color: white;
+            padding-top: 150px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .content {
+            height: 250px;
+            width: 400px;
+            text-align: center;
+            padding-top: 150px;
+            background-color: yellow;
+            margin: 5px;
+        }
+
+        .sidebar {
+            height: 175px;
+            width: 150px;
+            background-color: green;
+            text-align: center;
+            padding-top: 70px;
+            margin: 5px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        footer {
+            width: 720px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            padding-top: 37px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .box {
+            height: 150px;
+            width: 155px;
+            background-color: yellow;
+            padding-block-start: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <div class="main">
+        <div class="nav">Navigation</div>
+        <div class="content">Content</div>
+        <div class="right">
+            <div class="sidebar">Sidebar</div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <footer>Footer</footer>
+
+</body>
+
+</html>

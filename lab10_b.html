@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: cyan;
+            border-radius: 100px;
+            margin: 2px;
+            animation-name: color;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-timing-function: 10s;
+            position: relative;
+            animation-timing-function: ease;
+        }
+
+        .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: cyan;
+            border-radius: 100px;
+            margin: 2px;
+            animation-name: color1;
+            position: relative;
+            animation-timing-function: ease;
+            animation-duration: 10s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+
+        .box3 {
+            height: 100px;
+            width: 100px;
+            background-color: cyan;
+            border-radius: 100px;
+            margin: 2px;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            position: relative;
+            animation-timing-function: ease;
+            animation-name: color;
+        }
+
+        .box4 {
+            height: 100px;
+            width: 100px;
+            background-color: cyan;
+            border-radius: 100px;
+            margin: 2px;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            position: relative;
+            animation-timing-function: ease;
+            animation-name: color;
+        }
+
+        @keyframes color {
+            0% {
+                top: 0%;
+                left: 0%;
+            }
+
+            25% {
+                top: 0%;
+                left: calc(100% - 100px);
+            }
+
+            50% {
+                top: calc(100% - 100px);;
+                left: calc(100% - 100px);;
+            }
+            75%{
+                top: calc(100% - 100px);
+                left: 0%;
+            }
+            100%{
+                top: 0%;
+                left: 0%;
+            }
+        }
+        @keyframes color1 {
+             0% {
+                top: 0%;
+                left: 0%;
+            }
+
+            25% {
+                top: 0%;
+                left: calc(100% - 100px);
+            }
+
+            50% {
+                top: calc(100% - 100px);;
+                left: calc(100% - 100px);;
+            }
+            75%{
+                top: calc(100% - 100px);
+                left: 0%;
+            }
+            100%{
+                top: 0%;
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+
+</html>

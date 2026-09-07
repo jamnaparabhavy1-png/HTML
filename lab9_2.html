@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content {
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            top: 150px;
+            left: 50px;
+            color: white;
+        }
+
+        nav {
+            display: flexs;
+        }
+
+        .search {
+            border-radius: 10px;
+        }
+
+        .card {
+            background-color: black;
+            height: 200px;
+            width: 150px;
+            padding-left: 5px;
+        }
+
+        .unique {
+            height: 200px;
+            width: 150px;
+            background-color: bisque;
+            padding-left: 5px;
+        }
+        .table{
+            display: flex;
+            gap: 100px;
+        }
+        .box{
+            display: flex;
+            gap: 10px;
+        }
+        .circle{
+            border-radius: 20px;
+            height: 40px;
+            width: 40px;
+            background-color: red;
+            margin-top: 100px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="above">
+        <header>
+            <img src="./images (1).jpg" alt="Cannot load image" style="height: 100px; width: 100px;">
+            <nav>
+                <a href="">Home</a>
+                <a href="">My service</a>
+                <a href="">My Intro</a>
+                <a href="">Pages</a>
+                <a href="">Contact</a>
+                <div class="p"><input type="text" placeholder="Enter Keyword....">
+                    <button class="search">Search</button>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <img src="./images (2).jpg" alt="Cannot load image" style="height: 550px; width: 100%;">
+        </div>
+        <div class="text">
+            <p>i'm Mary Ateer</p>
+            <h1>DESIGNER</h1>
+            <p>I love to work in UI/UX designing.i always try my best to make good UI with best UX.</p>
+            <button class="search">Hire Me</button>
+        </div>
+    </div>
+    <div class="below">
+        <div class="img">
+            <img src="./images.png" alt="" style="height: 100px; width: 250px;">
+            <img src="./images (1).png" alt="" style="height: 100px; width: 250px;">
+            <img src="./images (2).png" alt="" style="height: 100px; width: 250px;">
+            <img src="./images (3).jpg" alt="" style="height: 100px; width: 250px;">
+            <img src="./images (4).jpg" alt="" style="height: 100px; width: 250px;">
+        </div>
+        <div class="table">
+            <div class="text1">
+                <h1>22</h1>
+                <p>Years of working</p>
+            </div>
+            <div class="contenire">
+                <div class="text2">
+                    <h3>i'am a designer & developer with passion for web design.</h3>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="circle"></div>
+                        <p><a href="">explorer more</a></p>
+                    </div>
+                    <div class="unique">
+                        <div class="circle"></div>
+                            <p>web designing</p>
+                    </div>
+                    <div class="unique">
+                        <div class="circle"></div>
+                        <p>brand identity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
