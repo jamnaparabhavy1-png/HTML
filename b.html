@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            text-align: center;
+            padding-top: 250px;
+            font-size: 100px;
+        }
+
+        .text::after {
+            animation-name: color;
+            animation-duration: 10s;
+            animation-delay: 0s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            content: "JAMNAPARA BHAVYA.....";
+            position: relative;
+        }
+
+        @keyframes color {
+            0% {
+                content: "J";
+            }
+
+            5% {
+                content: "JA";
+            }
+
+            10% {
+                content: "JAM";
+            }
+
+            15% {
+                content: "JAMN";
+            }
+
+            20% {
+                content: "JAMNA";
+            }
+
+            25% {
+                content: "JAMNAP";
+            }
+
+            30% {
+                content: "JAMNAPA";
+            }
+
+            35% {
+                content: "JAMNAPAR";
+            }
+
+            40% {
+                content: "JAMNAPARA";
+            }
+
+            45% {
+                content: "JAMNAPARA ";
+            }
+
+            50% {
+                content: "JAMNAPARA B";
+            }
+
+            55% {
+                content: "JAMNAPARA BH";
+            }
+
+            60% {
+                content: "JAMNAPARA BHA";
+            }
+
+            65% {
+                content: "JAMNAPARA BHAV";
+            }
+
+            70% {
+                content: "JAMNAPARA BHAVY";
+            }
+
+            75% {
+                content: "JAMNAPARA BHAVYA";
+            }
+
+            80% {
+                content: "JAMNAPARA BHAVYA.";
+            }
+
+            85% {
+                content: "JAMNAPARA BHAVYA..";
+            }
+
+            90% {
+                content: "JAMNAPARA BHAVYA...";
+            }
+
+            95% {
+                content: "JAMNAPARA BHAVYA....";
+            }
+
+            100% {
+                content: "JAMNAPARA BHAVYA.....";
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text"></div>
+</body>
+
+</html>
