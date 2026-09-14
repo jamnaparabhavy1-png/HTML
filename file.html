@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 100px;
+            animation-name: ball;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            animation-timing-function: ease;
+        }
+        p{
+            padding: 25px;
+        }
+        p::after{
+            content: "HELLO";
+            animation-name: h1;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            position: relative;
+        }
+
+        @keyframes ball {
+            0% {
+                top: 0%;
+                left: 0%;
+            }
+
+            25% {
+                top: calc(100% - 100px);
+                left: 0%;
+            }
+
+            50% {
+                top: 50%;
+                left: calc(50% - 50px);
+            }
+
+            75% {
+                top: calc(100% - 100px);
+                left: calc(100% - 100px);
+            }
+
+            100% {
+                top: 0%;
+                left: calc(100% - 100px);
+            }
+        }
+        @keyframes h1 {
+            0%{
+                content: "H";
+            }
+            25%{
+                content: "HE";
+            }
+            50%{
+                content: "HEL";
+            }
+             75%{
+                content: "HELL";
+            }
+             100%{
+                content: "HELLO";
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+       <p></p>
+    </div>
+</body>
+
+</html>

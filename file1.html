@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 48%, rgba(0, 212, 255, 1) 100%);linear-gradient (90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 48%, rgba(0, 212, 255, 1) 100%);;
+        }
+        .text{
+            font-size: 100px;
+            justify-content: center;
+            text-align: center;
+            padding-top: 250px;
+            color: white;
+        }
+        .text::after {
+            content: "Hello, I'm B.Tech Cse Student At Darshan University Thanks For Visiting";
+            animation-name: color;
+            animation-timing-function: ease;
+            animation-duration: 20s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            justify-content: center;
+            position: relative;
+        }
+
+        @keyframes color {
+            0% {
+                content: "Hello,";
+            }
+
+            25% {
+                content: "I'm Bhavya Jamnapara";
+            }
+
+            50% {
+                content: "I'm B.Tech Cse Student ";
+            }
+
+            75% {
+                content: "At Darshan University";
+            }
+
+            100% {
+                content: "Thanks For Visiting";
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text"></div>
+</body>
+
+</html>
